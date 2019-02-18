@@ -17,7 +17,6 @@ class Pagination extends Component {
 	        previousLabel={<span aria-hidden="true">&laquo;</span>}
 	        nextLabel={<span aria-hidden="true">&raquo;</span>}
 	        breakLabel={'...'}
-	        breakClassName={'break-me'}
 	        pageCount={this.props.pages}
 	        marginPagesDisplayed={2}
 	        pageRangeDisplayed={3}

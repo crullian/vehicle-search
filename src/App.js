@@ -100,7 +100,6 @@ class App extends Component {
 
   render() {
     const { vehicles, options, isLoading } = this.state;
-    // console.log('STATE', this.state)
     const priceHashIndex = Math.floor(options.number_of_weeks/options.number_of_months);
 
     let mainList;

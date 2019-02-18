@@ -6,8 +6,6 @@ import './VehiclesList.css';
 
 class VehiclesList extends Component {
 
-
-
 	render() {
 		const { vehicles, priceHashIndex } = this.props;
 
