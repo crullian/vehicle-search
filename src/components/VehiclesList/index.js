@@ -8,7 +8,9 @@ class VehiclesList extends Component {
 
 	render() {
 		const { vehicles, priceHashIndex } = this.props;
-
+		const pages = vehicles &&
+									vehicles.metadata &&
+									Math.ceil(vehicles.metadata.total_count/vehicles.metadata.per_page);
 		return (
 			<div className="col-12 col-lg-9">
 				<div className="vehicles-list row">
@@ -24,9 +26,9 @@ class VehiclesList extends Component {
 			    }
 			  </div>
 
-			  {vehicles && vehicles.metadata &&
+			  {vehicles && vehicles.metadata && pages > 1 &&
 				  <Pagination
-				  	pages={Math.ceil(vehicles.metadata.total_count/vehicles.metadata.per_page)}
+				  	pages={pages}
 				  	onHandleClickPageLink={this.props.onHandleClickPageLink}
 			  	/>
 		    }
