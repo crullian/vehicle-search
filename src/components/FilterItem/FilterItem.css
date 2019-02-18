@@ -1,0 +1,40 @@
+.dropdown-wrapper {
+	position: relative;
+	min-width: 200px;
+}
+
+.dropdown-label-wrapper {
+  display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	cursor: pointer;
+	background-color: rgb(255, 255, 255);
+	margin-bottom: 0px;
+	height: 40px;
+	padding: 0px 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(0, 0, 0);
+	border-image: initial;
+}
+
+.dropdown-label-wrapper > #label {
+  display: flex;
+  white-space: nowrap;
+  -webkit-box-align: center;
+  align-items: center;
+  flex: 1 1 0%;
+  overflow: hidden;
+}
+
+.dropdown-label-wrapper > #label > input {
+	outline: none;
+  border-style: none;
+  padding: 0px 10px 0px 0px;
+}
+
+.dropdown-label-wrapper > #icon {
+  margin-left: 10px;
+  display: flex;
+  flex: 0 1 0%;
+}
