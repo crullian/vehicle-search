@@ -6,8 +6,7 @@ import './Pagination.css';
 class Pagination extends Component {
 
 	handleClickPageLink = (event) => {
-		console.log('EVENT', event.selected)
-		this.props.onHandleClickPageLink('page', Number(event.selected))
+		this.props.onHandleClickPageLink('page', Number(event.selected)+1)
 	}
 
 	render() {
@@ -24,9 +23,12 @@ class Pagination extends Component {
 	        pageRangeDisplayed={3}
 	        onPageChange={this.handleClickPageLink}
 	        containerClassName={'pagination justify-content-center mt-3'}
-	        pageClassName={'page-item page-link'}
-	        previousClassName={'page-item page-link'}
-	        nextClassName={'page-item page-link'}
+	        pageClassName={'page-item'}
+	        pageLinkClassName={'page-link'}
+	        previousClassName={'page-item'}
+	        previousLinkClassName={'page-link'}
+	        nextClassName={'page-item'}
+	        nextLinkClassName={'page-link'}
 	        breakClassName={'page-item page-link'}
 	        activeClassName={'active'}
 	      />
